@@ -47,21 +47,32 @@ class _EnergiExpenditurePageState extends State<EnergiExpenditurePage> {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Text('Berat Badan:\n'),
             TextField(
               controller: weightController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Berat (kg)'),
+              decoration: InputDecoration(
+                  labelText: 'Berat (kg)',
+                  filled: true,
+                  fillColor: Colors.white),
             ),
+            Text('\nTinggi Badan:\n'),
             TextField(
               controller: heightController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Tinggi (cm)'),
+              decoration: InputDecoration(
+                  labelText: 'Tinggi (cm)',
+                  filled: true,
+                  fillColor: Colors.white),
             ),
+            Text('\nUsia:\n'),
             TextField(
               controller: ageController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Usia'),
+              decoration: InputDecoration(
+                  labelText: 'Usia', filled: true, fillColor: Colors.white),
             ),
             Row(
               children: <Widget>[
